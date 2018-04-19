@@ -10,4 +10,4 @@ const anonymousGreet = function() {
     console.log(arrayArgs.filter.call(arrayArgs, (a) => a.includes('somename')));
 };
 
-anonymousGreet('somename', 'someparambatence');
+anonymousGreet('somename');
