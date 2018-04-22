@@ -7,3 +7,15 @@ function greet() {
 const anonymousGreet = function() {
     console.log('Hi');
 };
+
+function* genId() {
+    let id = 0;
+    while (true) {
+        yield ++id;
+    }
+}
+
+const gen = genId();
+for (let i = 0; i < 10; i++) {
+    console.log(gen.next().value);
+}
